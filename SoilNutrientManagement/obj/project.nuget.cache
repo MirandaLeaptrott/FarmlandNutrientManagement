@@ -1,10 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "iSA/1gA12FY=",
+  "dgSpecHash": "mmzRT444Joc=",
   "success": true,
   "projectFilePath": "C:\\Users\\light\\source\\repos\\SoilNutrientManagement\\SoilNutrientManagement\\FarmlandNutrientManagement.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\light\\.nuget\\packages\\newtonsoft.json\\13.0.4\\newtonsoft.json.13.0.4.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "message": "Error occurred while getting package vulnerability data: Unable to load the service index for source https://api.nuget.org/v3/index.json.",
+      "projectPath": "C:\\Users\\light\\source\\repos\\SoilNutrientManagement\\SoilNutrientManagement\\FarmlandNutrientManagement.csproj",
+      "warningLevel": 1,
+      "filePath": "C:\\Users\\light\\source\\repos\\SoilNutrientManagement\\SoilNutrientManagement\\FarmlandNutrientManagement.csproj",
+      "targetGraphs": []
+    }
+  ]
 }

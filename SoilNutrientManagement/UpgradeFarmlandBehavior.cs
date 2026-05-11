@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using Vintagestory.API.Client;
@@ -272,9 +271,9 @@ class UpgradeFarmlandBehavior : BlockBehavior
 
             try
             {
-                world.PlaySoundAt(world.BlockAccessor.GetBlock(pos).Sounds.Hit, (double)pos.X + 0.5, (double)pos.Y + 0.75, (double)pos.Z + 0.5, byPlayer, true, 12f, 1f);
-                //long randomsound = world.Rand.Next(1, 4);
-                //world.PlaySoundAt(new AssetLocation("sounds/block/dirt" + randomsound), (double)pos.X + 0.5, (double)pos.Y + 0.75, (double)pos.Z + 0.5, byPlayer, true, 12f, 1f);
+                //world.PlaySoundAt(world.BlockAccessor.GetBlock(pos).Sounds.Hit, (double)pos.X + 0.5, (double)pos.Y + 0.75, (double)pos.Z + 0.5, byPlayer, true, 12f, 1f);
+                long randomsound = world.Rand.Next(1, 4);
+                world.PlaySoundAt(new AssetLocation("sounds/block/dirt" + randomsound), (double)pos.X + 0.5, (double)pos.Y + 0.75, (double)pos.Z + 0.5, byPlayer, true, 12f, 1f);
             }
             catch (Exception e) 
                 { this.Api.Logger.Debug(e.ToString()); }
